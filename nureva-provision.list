@@ -1,0 +1,1 @@
+deb [signed-by=/usr/share/keyrings/nureva-provision-archive-keyring.gpg] https://nureva-com.github.io/provision-ppa ./
