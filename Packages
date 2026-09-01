@@ -1,0 +1,16 @@
+Package: nureva-provision-system-hdx
+Version: 0.0.1
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 9
+Filename: ./nureva-provision-system-hdx_0.0.1_all.deb
+Size: 1712
+MD5sum: 4cc750308f2480aaf5a8c19403800f3e
+SHA1: 38baa11e1c2cf8de4ea4690986b53661c518a325
+SHA256: c7b7f341c8903e326d9b1f7558f2c4791343e34ef2edb337480041280f63f4e5
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Meta-package that brings in packages used for Secure Boot Provisioner for HDX.
+ Holds all of the necessary packages for the system that is used to program a HDX.
+
