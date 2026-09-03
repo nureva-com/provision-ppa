@@ -1,3 +1,44 @@
+Package: nureva-provision-device-cm4
+Version: 1.0.0
+Architecture: all
+Maintainer: Christopher Schultze <christopherschultze@nureva.com>
+Installed-Size: 20
+Depends: rpi-eeprom, rpi-sb-provisioner, curl
+Conflicts: nureva-provision-device
+Provides: nureva-provision-device
+Filename: ./nureva-provision-device-cm4_1.0.0_all.deb
+Size: 3274
+MD5sum: ae94d0a15f8c1419b2ec611e98c68116
+SHA1: fd1b496834266e61fe3f6876f1a07796311690d3
+SHA256: 50ce625370c499d419a894aa144affa3573ed1260c9fc84dafc0b341ca6709c1
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: General CM4 device-specific provisioning config and EEPROM
+ Configures rpi-sb-provisioner for naked provisioning of Raspberry Pi
+ Compute Module 4 devices using eMMC storage, and selects the EEPROM
+ bootloader firmware file to use during provisioning.
+
+Package: nureva-provision-style-naked
+Version: 1.0.0
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 35
+Depends: rpi-sb-provisioner, curl
+Conflicts: nureva-provision-style
+Provides: nureva-provision-style
+Filename: ./nureva-provision-style-naked_1.0.0_all.deb
+Size: 5238
+MD5sum: a14fa0139161fadcec983b4fdfe4e80c
+SHA1: 71ad1e1b5b012982bf88a5d24d9088916d2dbeec
+SHA256: 7bdd4dccf662d073b46328f833ee7eabab782a5c13dceaf9fcfe5a77a6ffb4f5
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Configures provisioner for naked provisioning
+ Sets up a folder for other packages to add scripts to and adds customisation
+ scripts to `rpi-sb-provisioner`.
+
 Package: nureva-provision-system-hdx
 Version: 0.0.1
 Architecture: all
