@@ -64,10 +64,10 @@ Depends: cups, cups-client
 Conflicts: nureva-provision-label-printer
 Provides: nureva-provision-label-printer
 Filename: ./nureva-provision-label-printer-zd400_1.0.0_all.deb
-Size: 2958
-MD5sum: 45878451029382d5a3abc1650b86922b
-SHA1: 6bd5ddf903c35442f7a9c5fd03515e6dae81d431
-SHA256: 2abb4e71e72f7fd39955ee6e71378cd9607fcc961c7b88f97d1015aea380f794
+Size: 3024
+MD5sum: 3e021a861f97b9c846f892597608a9d0
+SHA1: 854cc29f8cd4c8df2cad5bd875f45bd39bfabd9d
+SHA256: 21867599437d4b396662f53197a869d0de56b60f36c938c9806db9caa8d5f9d2
 Section: misc
 Priority: optional
 Multi-Arch: foreign
