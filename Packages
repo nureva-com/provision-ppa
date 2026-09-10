@@ -19,6 +19,131 @@ Description: General CM4 device-specific provisioning config and EEPROM
  Compute Module 4 devices using eMMC storage, and selects the EEPROM
  bootloader firmware file to use during provisioning.
 
+Package: nureva-provision-devicecheck-hdx
+Version: 1.0.0
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 16
+Depends: nureva-provision-style-naked
+Filename: ./nureva-provision-devicecheck-hdx_1.0.0_all.deb
+Size: 3240
+MD5sum: 2f5e8d2215b5407fd776b57be03507ec
+SHA1: b6d7937a7e882cd44814ad922ef5b864b2c87d68
+SHA256: 041380fe963bde14faabd9459c253396155b655d40ba6c11c971b06bafc19a7f
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Checks that UUT is expected CM4 type.
+ Checks early on in the provisioning process that the CM4 type that is
+ getting provisioned is appropriate for an HDX. If is isn't the right
+ type, provisioning fails early without flashing an image.
+
+Package: nureva-provision-hdx-label-print
+Version: 1.0.0
+Architecture: all
+Maintainer: Alejandro Mata <alejandromata@nureva.com>
+Installed-Size: 22
+Depends: nureva-provision-label-printer, rpi-sb-provisioner, nureva-provision-style-naked
+Filename: ./nureva-provision-hdx-label-print_1.0.0_all.deb
+Size: 3468
+MD5sum: 96b2c4679ffaddf5c3b920410d7d6080
+SHA1: 2f117bfb73933f7639671419a6cc1227e250a037
+SHA256: 05d8309d02d601d6a71df3565d97ff69991bba8c814676c0897900046683bdea
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: HDX label print package
+ Provides specific printer options for the HDX label printer
+
+Package: nureva-provision-label-printer-zd400
+Version: 1.0.0
+Architecture: all
+Maintainer: Alejandro Mata <alejandromata@nureva.com>
+Installed-Size: 15
+Depends: cups, cups-client
+Conflicts: nureva-provision-label-printer
+Provides: nureva-provision-label-printer
+Filename: ./nureva-provision-label-printer-zd400_1.0.0_all.deb
+Size: 2958
+MD5sum: 45878451029382d5a3abc1650b86922b
+SHA1: 6bd5ddf903c35442f7a9c5fd03515e6dae81d431
+SHA256: 2abb4e71e72f7fd39955ee6e71378cd9607fcc961c7b88f97d1015aea380f794
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Printer configuration package
+ Configures the appropriate printer for the provisioning system
+
+Package: nureva-provision-led-cm4io
+Version: 1.0.0
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 16
+Depends: nureva-provision-style-naked
+Filename: ./nureva-provision-led-cm4io_1.0.0_all.deb
+Size: 3170
+MD5sum: dc2606ab5dcf6ad7262bec3d7c4b9206
+SHA1: 637d988fd20454b9f03d1ea5d9a81be9290e7378
+SHA256: 9d0e847e95498dd8f3a68a746235028c3adea4fa5ef14516bfe19f10de8a5b56
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Flash CM4IO LED if provisioning fails.
+ If provisioning fails, the PWR LED (red) on the CM4IO will flash to indicate
+ that there is an error.
+
+Package: nureva-provision-macaddr-hdx
+Version: 1.0.0
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 17
+Depends: rpi-sb-provisioner, nureva-provision-style-naked
+Filename: ./nureva-provision-macaddr-hdx_1.0.0_all.deb
+Size: 3786
+MD5sum: f823f93ac28b49bf245eb39fafd52f00
+SHA1: b504afd8e4a8a19c294948a8d0224d5b5f7ecce1
+SHA256: b1d7f8b4c04cb29c950c663cbcbe66a18651a02025b69b279091442bdbd1a0e4
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Program MAC addresses to HDX.
+ Manages provisioner script for programming MAC addresses to HDX via a MAC
+ server.
+
+Package: nureva-provision-nginx
+Version: 1.0.0
+Architecture: all
+Maintainer: Alejandro Mata <alejandromata@nureva.com>
+Installed-Size: 30
+Depends: nginx, nginx-extras
+Filename: ./nureva-provision-nginx_1.0.0_all.deb
+Size: 4956
+MD5sum: f4bc97c8e7ae467efd3a502f6c9c6681
+SHA1: e785069366df0dae1c90343665075ad89825816f
+SHA256: 8fd6c1328f375337dd00c3a77c016954781a1fc18d9e2673e42d6e55b0e06b1d
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Nureva nginx configuration package
+ This package comes with specific configuration for nginx
+
+Package: nureva-provision-printer
+Version: 1.0.0
+Architecture: all
+Maintainer: Alejandro Mata <alejandromata@nureva.com>
+Installed-Size: 12
+Depends: cups
+Filename: ./nureva-provision-printer_1.0.0_all.deb
+Size: 2034
+MD5sum: 421779fc5f3880c8a00df12770734f43
+SHA1: 140dfae828f186cf59bda54b9e0efedd8dda5d1f
+SHA256: cccb4ab5a4d1cb77d38c8cbe4a19f8f4e321989bacf024b76770832e7f476cd1
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Main package to support label printing
+ This package modifies cups configuration to support binding to all addresses
+
 Package: nureva-provision-style-naked
 Version: 1.0.0
 Architecture: all
