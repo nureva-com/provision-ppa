@@ -3,14 +3,15 @@ Version: 1.0.0
 Architecture: all
 Maintainer: Christopher Schultze <christopherschultze@nureva.com>
 Installed-Size: 20
-Depends: rpi-eeprom, rpi-sb-provisioner, curl
+Pre-Depends: rpi-sb-provisioner
+Depends: rpi-eeprom, curl
 Conflicts: nureva-provision-device
 Provides: nureva-provision-device
 Filename: ./nureva-provision-device-cm4_1.0.0_all.deb
-Size: 3274
-MD5sum: ae94d0a15f8c1419b2ec611e98c68116
-SHA1: fd1b496834266e61fe3f6876f1a07796311690d3
-SHA256: 50ce625370c499d419a894aa144affa3573ed1260c9fc84dafc0b341ca6709c1
+Size: 3266
+MD5sum: 0572c53c32cf64f2ab78afb97dff96a7
+SHA1: 9f4c82f212e88aad4a80f692751f49a951d26e92
+SHA256: abaa7b96dc6ca193e1fd3913881aaccff30cbc1a476767a767888adac799de7c
 Section: misc
 Priority: optional
 Multi-Arch: foreign
@@ -43,12 +44,12 @@ Version: 1.0.0
 Architecture: all
 Maintainer: Alejandro Mata <alejandromata@nureva.com>
 Installed-Size: 22
-Depends: nureva-provision-label-printer, rpi-sb-provisioner, nureva-provision-style-naked
+Depends: nureva-provision-label-printer, nureva-provision-style-naked
 Filename: ./nureva-provision-hdx-label-print_1.0.0_all.deb
-Size: 3468
-MD5sum: 96b2c4679ffaddf5c3b920410d7d6080
-SHA1: 2f117bfb73933f7639671419a6cc1227e250a037
-SHA256: 05d8309d02d601d6a71df3565d97ff69991bba8c814676c0897900046683bdea
+Size: 3456
+MD5sum: f26d33c820350590f7d6eecc7cde168f
+SHA1: fc987478c0cce1037e95b83576588f5f29051f42
+SHA256: 83154338f1b6a0af42d7128e31f8ec6211f1c033f7b380f49a18a08817ff687b
 Section: misc
 Priority: optional
 Multi-Arch: foreign
@@ -149,14 +150,15 @@ Version: 1.0.0
 Architecture: all
 Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
 Installed-Size: 35
-Depends: rpi-sb-provisioner, curl
+Pre-Depends: rpi-sb-provisioner
+Depends: curl
 Conflicts: nureva-provision-style
 Provides: nureva-provision-style
 Filename: ./nureva-provision-style-naked_1.0.0_all.deb
-Size: 5238
-MD5sum: a14fa0139161fadcec983b4fdfe4e80c
-SHA1: 71ad1e1b5b012982bf88a5d24d9088916d2dbeec
-SHA256: 7bdd4dccf662d073b46328f833ee7eabab782a5c13dceaf9fcfe5a77a6ffb4f5
+Size: 5242
+MD5sum: de29aada54cdfa1d4778a567e527b9d6
+SHA1: 7f73450694fc1353d2d5d13a36570ff07a011eb8
+SHA256: 0ec5ba9cb507bb70485dfd70dbbd096ed81e41549a33784d0885fac45b9a6123
 Section: misc
 Priority: optional
 Multi-Arch: foreign
