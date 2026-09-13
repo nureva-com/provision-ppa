@@ -167,18 +167,39 @@ Description: Configures provisioner for naked provisioning
  scripts to `rpi-sb-provisioner`.
 
 Package: nureva-provision-system-hdx
-Version: 0.0.1
+Version: 1.0.0
 Architecture: all
 Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
-Installed-Size: 9
-Filename: ./nureva-provision-system-hdx_0.0.1_all.deb
-Size: 1712
-MD5sum: 4cc750308f2480aaf5a8c19403800f3e
-SHA1: 38baa11e1c2cf8de4ea4690986b53661c518a325
-SHA256: c7b7f341c8903e326d9b1f7558f2c4791343e34ef2edb337480041280f63f4e5
+Installed-Size: 10
+Depends: rpi-sb-provisioner (>= 2.3.5), nureva-provision-device-cm4 (= 1.0.0), nureva-provision-devicecheck-hdx (= 1.0.0), nureva-provision-led-cm4io (= 1.0.0), nureva-provision-macaddr-hdx (= 1.0.0), nureva-provision-nginx (= 1.0.0), nureva-provision-printer (= 1.0.0), nureva-provision-style-naked (= 1.0.0), nureva-provision-usb-bottomusb2 (= 1.0.0)
+Recommends: nureva-provision-image-hdx
+Suggests: nureva-provision-label-printer-zd400 (= 1.0.0), nureva-provision-hdx-label-print (= 1.0.0)
+Filename: ./nureva-provision-system-hdx_1.0.0_all.deb
+Size: 1990
+MD5sum: ec0304a6ed8f67a173406dffedc10f17
+SHA1: 416d267a1ad87dd430b61462550e86e27e912749
+SHA256: 327cf6cfd8b5e4bc1e7ecc36edcc9f61e17e82f30b7a16d286ff8bda50e8377a
 Section: misc
 Priority: optional
 Multi-Arch: foreign
 Description: Meta-package that brings in packages used for Secure Boot Provisioner for HDX.
  Holds all of the necessary packages for the system that is used to program a HDX.
+
+Package: nureva-provision-usb-bottomusb2
+Version: 1.0.0
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 11
+Depends: rpi-sb-provisioner
+Filename: ./nureva-provision-usb-bottomusb2_1.0.0_all.deb
+Size: 1464
+MD5sum: d07a53e64351d02c3096e3410ddc23d3
+SHA1: f76e09c5e7cb6c7af13ed24f040da4a2c24bc3b6
+SHA256: b055f99383cb23a804ab4ad987489946b9bf1b01437a089836e97ea47c124064
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Restrict provision to bottom left USB port.
+ Restricts the USB ports used for provisioning to the bottom USB2 port on
+ an RPi 4b, i.e. bottom left.
 
