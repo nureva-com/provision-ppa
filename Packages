@@ -202,6 +202,25 @@ Multi-Arch: foreign
 Description: Meta-package that brings in packages used for Secure Boot Provisioner for HDX.
  Holds all of the necessary packages for the system that is used to program a HDX.
 
+Package: nureva-provision-system-hdx
+Version: 1.0.1
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 10
+Depends: rpi-sb-provisioner (>= 2.3.5), nureva-provision-device-cm4 (= 1.0.0), nureva-provision-devicecheck-hdx (= 1.0.0), nureva-provision-led-cm4io (= 1.0.0), nureva-provision-macaddr-hdx (= 1.0.0), nureva-provision-nginx (= 1.0.0), nureva-provision-printer (= 1.0.0), nureva-provision-style-naked (= 1.0.0), nureva-provision-usb-bottomusb2 (= 1.0.0)
+Recommends: nureva-provision-image-hdx
+Suggests: nureva-provision-label-printer-zd400 (= 1.0.0), nureva-provision-hdx-label-print (= 1.0.1)
+Filename: ./nureva-provision-system-hdx_1.0.1_all.deb
+Size: 2062
+MD5sum: 4b95c99e3d39b48d1b013c9f10f5b570
+SHA1: ce11877cf4e0a2633531377c0624118e9d2ac855
+SHA256: 8aa7d7cdac339e5d6683fa918e7d52ecb4ec890cf12dd1dac2d13791d044574f
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Meta-package that brings in packages used for Secure Boot Provisioner for HDX.
+ Holds all of the necessary packages for the system that is used to program a HDX.
+
 Package: nureva-provision-usb-bottomusb2
 Version: 1.0.0
 Architecture: all
