@@ -46,10 +46,10 @@ Maintainer: Alejandro Mata <alejandromata@nureva.com>
 Installed-Size: 20
 Depends: nureva-provision-image-hdx, nureva-provision-style-naked, nureva-provision-label-printer
 Filename: ./nureva-provision-hdx-label-print_1.0.0_all.deb
-Size: 3666
-MD5sum: dc18b48ef27449e38f3800e599417513
-SHA1: 149a54f5de5c83082cb608a38985f113d281f227
-SHA256: 975f804f8dc02594c93568c77dc82118d7fbb14b6595f52cc2716c9b089f8458
+Size: 3682
+MD5sum: b6f52d4badb1fd092b292a16897ac067
+SHA1: 7a583565c4c51dbb0ed22af3deb99ae6ea39c8b5
+SHA256: 05eaab0809818cf62fae21c6362c29c0dde107de2317370dab908ff17f5c7027
 Section: misc
 Priority: optional
 Multi-Arch: foreign
