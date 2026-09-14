@@ -56,6 +56,23 @@ Multi-Arch: foreign
 Description: HDX label print package
  Provides specific printer options for the HDX label printer
 
+Package: nureva-provision-hdx-label-print
+Version: 1.0.1
+Architecture: all
+Maintainer: Alejandro Mata <alejandromata@nureva.com>
+Installed-Size: 20
+Depends: nureva-provision-image-hdx, nureva-provision-style-naked, nureva-provision-label-printer
+Filename: ./nureva-provision-hdx-label-print_1.0.1_all.deb
+Size: 3804
+MD5sum: 83bd0ee914bd86462261526ff5dcf92c
+SHA1: beae12614fbce84753913973520c6c843519ac14
+SHA256: d498fd85a198ff113bebaf673cebb11a6b7f723ca19ed535b090245f118d0f6f
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: HDX label print package
+ Provides specific printer options for the HDX label printer
+
 Package: nureva-provision-label-printer-zd400
 Version: 1.0.0
 Architecture: all
