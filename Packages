@@ -237,6 +237,27 @@ Description: Configures provisioner for naked provisioning
  Sets up a folder for other packages to add scripts to and adds customisation
  scripts to `rpi-sb-provisioner`.
 
+Package: nureva-provision-style-naked
+Version: 1.0.1
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 33
+Pre-Depends: rpi-sb-provisioner
+Depends: curl
+Conflicts: nureva-provision-style
+Provides: nureva-provision-style
+Filename: ./nureva-provision-style-naked_1.0.1_all.deb
+Size: 5624
+MD5sum: f3868a6a9ab478eea6a6ce1ab98a9a37
+SHA1: 6d1930065d57627b0171d9c3cf1a4d14247e7e99
+SHA256: 0c6b9e620b19583fd07462938c25e729e30ba0f673f01e0dc96f94df18f04448
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Configures provisioner for naked provisioning
+ Sets up a folder for other packages to add scripts to and adds customisation
+ scripts to `rpi-sb-provisioner`.
+
 Package: nureva-provision-system-hdx
 Version: 1.0.0
 Architecture: all
@@ -307,6 +328,25 @@ Size: 2132
 MD5sum: d77afeaf8a43a62978c9e16faeca4693
 SHA1: 3fe0843813ac9a95efc69f63678a5b3fcbafa446
 SHA256: b11acc85e8c8f7289c19a2120ab96efc4bc8a4045eb19b320b8e561e5dfbb530
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Meta-package that brings in packages used for Secure Boot Provisioner for HDX.
+ Holds all of the necessary packages for the system that is used to program a HDX.
+
+Package: nureva-provision-system-hdx
+Version: 1.0.4
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 10
+Depends: rpi-sb-provisioner (>= 2.3.5), nureva-provision-device-cm4 (= 1.0.0), nureva-provision-devicecheck-hdx (= 1.0.1), nureva-provision-led-cm4io (= 1.0.0), nureva-provision-macaddr-hdx (= 1.0.1), nureva-provision-nginx (= 1.0.0), nureva-provision-printer (= 1.0.0), nureva-provision-style-naked (= 1.0.1), nureva-provision-usb-bottomusb2 (= 1.0.1)
+Recommends: nureva-provision-image-hdx
+Suggests: nureva-provision-label-printer-zd400 (= 1.0.0), nureva-provision-hdx-label-print (= 1.0.2)
+Filename: ./nureva-provision-system-hdx_1.0.4_all.deb
+Size: 2174
+MD5sum: 996ee4cd52b373b674430c384fdb8fc2
+SHA1: 3267a0afd3d87e9ca98c8447aa13f47e157d6f23
+SHA256: cefa4234b3babe3f7119f0c78458b3bb02b326d54361e0ee90e1d869eb421468
 Section: misc
 Priority: optional
 Multi-Arch: foreign
