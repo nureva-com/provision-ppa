@@ -294,6 +294,25 @@ Multi-Arch: foreign
 Description: Meta-package that brings in packages used for Secure Boot Provisioner for HDX.
  Holds all of the necessary packages for the system that is used to program a HDX.
 
+Package: nureva-provision-system-hdx
+Version: 1.0.3
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 10
+Depends: rpi-sb-provisioner (>= 2.3.5), nureva-provision-device-cm4 (= 1.0.0), nureva-provision-devicecheck-hdx (= 1.0.1), nureva-provision-led-cm4io (= 1.0.0), nureva-provision-macaddr-hdx (= 1.0.1), nureva-provision-nginx (= 1.0.0), nureva-provision-printer (= 1.0.0), nureva-provision-style-naked (= 1.0.0), nureva-provision-usb-bottomusb2 (= 1.0.1)
+Recommends: nureva-provision-image-hdx
+Suggests: nureva-provision-label-printer-zd400 (= 1.0.0), nureva-provision-hdx-label-print (= 1.0.2)
+Filename: ./nureva-provision-system-hdx_1.0.3_all.deb
+Size: 2132
+MD5sum: d77afeaf8a43a62978c9e16faeca4693
+SHA1: 3fe0843813ac9a95efc69f63678a5b3fcbafa446
+SHA256: b11acc85e8c8f7289c19a2120ab96efc4bc8a4045eb19b320b8e561e5dfbb530
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Meta-package that brings in packages used for Secure Boot Provisioner for HDX.
+ Holds all of the necessary packages for the system that is used to program a HDX.
+
 Package: nureva-provision-usb-bottomusb2
 Version: 1.0.0
 Architecture: all
@@ -305,6 +324,24 @@ Size: 1464
 MD5sum: d07a53e64351d02c3096e3410ddc23d3
 SHA1: f76e09c5e7cb6c7af13ed24f040da4a2c24bc3b6
 SHA256: b055f99383cb23a804ab4ad987489946b9bf1b01437a089836e97ea47c124064
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Restrict provision to bottom left USB port.
+ Restricts the USB ports used for provisioning to the bottom USB2 port on
+ an RPi 4b, i.e. bottom left.
+
+Package: nureva-provision-usb-bottomusb2
+Version: 1.0.1
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 11
+Depends: rpi-sb-provisioner
+Filename: ./nureva-provision-usb-bottomusb2_1.0.1_all.deb
+Size: 1544
+MD5sum: bf1d1f3e18353488aa748b0508fc3cd9
+SHA1: 53d42cdae2853e1eba02297a6a15a5fc1c31b056
+SHA256: 9405825d008f56cada79c66eeaddeb5f9aa525b30a15a4d2da5b00e2d91dd4e3
 Section: misc
 Priority: optional
 Multi-Arch: foreign
