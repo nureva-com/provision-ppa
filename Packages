@@ -39,6 +39,25 @@ Description: Checks that UUT is expected CM4 type.
  getting provisioned is appropriate for an HDX. If is isn't the right
  type, provisioning fails early without flashing an image.
 
+Package: nureva-provision-devicecheck-hdx
+Version: 1.0.1
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 17
+Depends: nureva-provision-style-naked
+Filename: ./nureva-provision-devicecheck-hdx_1.0.1_all.deb
+Size: 3206
+MD5sum: d7d6f6bc2b18b09b9e5154c4a84e3d60
+SHA1: a41abb945922faf92b67594feb48440d83fedd4a
+SHA256: 9eafa14c16184c2478d538d2e7e660a70137318e0f14fcd64a3a5d3dbfb90cc8
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Checks that UUT is expected CM4 type.
+ Checks early on in the provisioning process that the CM4 type that is
+ getting provisioned is appropriate for an HDX. If is isn't the right
+ type, provisioning fails early without flashing an image.
+
 Package: nureva-provision-hdx-label-print
 Version: 1.0.0
 Architecture: all
@@ -67,6 +86,23 @@ Size: 3934
 MD5sum: 7f2f16bb4b1ba5473e0816889859f9d7
 SHA1: 2e9dffed9be8cc89f7c242fc3661039c81b9c049
 SHA256: 81fe70601a9ae0cfb296c2cfec4475643d125437f1f40857ff3a17b7a21e8794
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: HDX label print package
+ Provides specific printer options for the HDX label printer
+
+Package: nureva-provision-hdx-label-print
+Version: 1.0.2
+Architecture: all
+Maintainer: Alejandro Mata <alejandromata@nureva.com>
+Installed-Size: 20
+Depends: nureva-provision-image-hdx, nureva-provision-style-naked, nureva-provision-label-printer
+Filename: ./nureva-provision-hdx-label-print_1.0.2_all.deb
+Size: 4044
+MD5sum: 1be68ebe0b74ffed1bcd8adcdee19c0f
+SHA1: f54d18a77b8bd7d87e1ec77a281030a5e8ff71dd
+SHA256: 3ea914c1432733d3fd20da66de8c3d94ada782b1b09ef5e40632d4f60433d105
 Section: misc
 Priority: optional
 Multi-Arch: foreign
@@ -121,6 +157,24 @@ Size: 3654
 MD5sum: db11624c1253e886e83294a0f30f423f
 SHA1: a6e06b30b02ef40c855f9eeab52c3c9a871e809a
 SHA256: 001b33ec3fe8fa57ee0d5e2acdf9d1445c14c98097a9b72b17d4b47668fcaeaa
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Program MAC addresses to HDX.
+ Manages provisioner script for programming MAC addresses to HDX via a MAC
+ server.
+
+Package: nureva-provision-macaddr-hdx
+Version: 1.0.1
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 18
+Depends: rpi-sb-provisioner, nureva-provision-style-naked
+Filename: ./nureva-provision-macaddr-hdx_1.0.1_all.deb
+Size: 3770
+MD5sum: 2a63abee2ba1db4c750e1bc1cc9c952e
+SHA1: a8c75322b1d56dd4d81b2316edc92d6543dfd168
+SHA256: a15202ceba8f7d8c09b550bcf73ec60e057ee9926afe0d1165571e84764e3f44
 Section: misc
 Priority: optional
 Multi-Arch: foreign
@@ -215,6 +269,25 @@ Size: 2062
 MD5sum: 4b95c99e3d39b48d1b013c9f10f5b570
 SHA1: ce11877cf4e0a2633531377c0624118e9d2ac855
 SHA256: 8aa7d7cdac339e5d6683fa918e7d52ecb4ec890cf12dd1dac2d13791d044574f
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Meta-package that brings in packages used for Secure Boot Provisioner for HDX.
+ Holds all of the necessary packages for the system that is used to program a HDX.
+
+Package: nureva-provision-system-hdx
+Version: 1.0.2
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 10
+Depends: rpi-sb-provisioner (>= 2.3.5), nureva-provision-device-cm4 (= 1.0.0), nureva-provision-devicecheck-hdx (= 1.0.1), nureva-provision-led-cm4io (= 1.0.0), nureva-provision-macaddr-hdx (= 1.0.1), nureva-provision-nginx (= 1.0.0), nureva-provision-printer (= 1.0.0), nureva-provision-style-naked (= 1.0.0), nureva-provision-usb-bottomusb2 (= 1.0.0)
+Recommends: nureva-provision-image-hdx
+Suggests: nureva-provision-label-printer-zd400 (= 1.0.0), nureva-provision-hdx-label-print (= 1.0.2)
+Filename: ./nureva-provision-system-hdx_1.0.2_all.deb
+Size: 2112
+MD5sum: 01cbd41b1aac5e2366bcc41ce26984f8
+SHA1: 711f004d60799febd60e430d5f5dec81e5fd176e
+SHA256: 7ac9d12c6b56d929dba29c7dbe481fcbc6c6674166c3b3729925de33b4ac2573
 Section: misc
 Priority: optional
 Multi-Arch: foreign
