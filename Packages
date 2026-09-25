@@ -1,3 +1,22 @@
+Package: nureva-provision-cm2-label-print
+Version: 1.0.0
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 21
+Depends: nureva-provision-image-cm2, nureva-provision-style-naked, nureva-provision-label-printer
+Conflicts: nureva-provision-label-print
+Provides: nureva-provision-label-print
+Filename: ./nureva-provision-cm2-label-print_1.0.0_all.deb
+Size: 4740
+MD5sum: 5ee29e7e22b1a7624e0a268d754281cb
+SHA1: 5eedd31aaa827a6f60faafc1559392a9d750e399
+SHA256: 395a33df8a4e7890442d83dfdae8c7bb94d351f512ebe11ef681f7b8d7fd78eb
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: CM2 label print package
+ Provides specific printer options for the CM2 label printer
+
 Package: nureva-provision-device-cm4
 Version: 1.0.0
 Architecture: all
@@ -19,6 +38,27 @@ Description: General CM4 device-specific provisioning config and EEPROM
  Configures rpi-sb-provisioner for naked provisioning of Raspberry Pi
  Compute Module 4 devices using eMMC storage, and selects the EEPROM
  bootloader firmware file to use during provisioning.
+
+Package: nureva-provision-devicecheck-cm2
+Version: 1.0.0
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 17
+Depends: nureva-provision-style-naked
+Conflicts: nureva-provision-devicecheck
+Provides: nureva-provision-devicecheck
+Filename: ./nureva-provision-devicecheck-cm2_1.0.0_all.deb
+Size: 3172
+MD5sum: d829da433e9326dae7cf67ca5d89dc37
+SHA1: 62a4274f1001fb9544563ad5d11ac39c4dc6d158
+SHA256: 71c77deba0d03b85a59b8298c0a117e4ce91c16adbff3a4304da6fe950d47382
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Checks that UUT is expected CM4 type.
+ Checks early on in the provisioning process that the CM4 type that is
+ getting provisioned is appropriate for a CM2. If is isn't the right
+ type, provisioning fails early without flashing an image.
 
 Package: nureva-provision-devicecheck-hdx
 Version: 1.0.0
@@ -50,6 +90,27 @@ Size: 3206
 MD5sum: d7d6f6bc2b18b09b9e5154c4a84e3d60
 SHA1: a41abb945922faf92b67594feb48440d83fedd4a
 SHA256: 9eafa14c16184c2478d538d2e7e660a70137318e0f14fcd64a3a5d3dbfb90cc8
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Checks that UUT is expected CM4 type.
+ Checks early on in the provisioning process that the CM4 type that is
+ getting provisioned is appropriate for an HDX. If is isn't the right
+ type, provisioning fails early without flashing an image.
+
+Package: nureva-provision-devicecheck-hdx
+Version: 1.0.2
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 17
+Depends: nureva-provision-style-naked
+Conflicts: nureva-provision-devicecheck
+Provides: nureva-provision-devicecheck
+Filename: ./nureva-provision-devicecheck-hdx_1.0.2_all.deb
+Size: 3290
+MD5sum: 1155c4057b718ecd10de0a1b85d389e7
+SHA1: 5b5909bfaff00bbcefe9fd7e92f98c2c37257720
+SHA256: 4628ac549d033d41b37f5a87248ad2eb69ad737256ce28806404730e191634ad
 Section: misc
 Priority: optional
 Multi-Arch: foreign
@@ -109,6 +170,25 @@ Multi-Arch: foreign
 Description: HDX label print package
  Provides specific printer options for the HDX label printer
 
+Package: nureva-provision-hdx-label-print
+Version: 1.0.3
+Architecture: all
+Maintainer: Alejandro Mata <alejandromata@nureva.com>
+Installed-Size: 20
+Depends: nureva-provision-image-hdx, nureva-provision-style-naked, nureva-provision-label-printer
+Conflicts: nureva-provision-label-print
+Provides: nureva-provision-label-print
+Filename: ./nureva-provision-hdx-label-print_1.0.3_all.deb
+Size: 4118
+MD5sum: 327ec92f15e19abddb07b04c72ae8670
+SHA1: db6ccfad3f307ca7d9fcbc7edeb84ee1052014ad
+SHA256: 7eafe5fdf71023cb0a89cfd362b18f3bfc123e790e3d7f489212cff25de13533
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: HDX label print package
+ Provides specific printer options for the HDX label printer
+
 Package: nureva-provision-label-printer-zd400
 Version: 1.0.0
 Architecture: all
@@ -146,6 +226,26 @@ Description: Flash CM4IO LED if provisioning fails.
  If provisioning fails, the PWR LED (red) on the CM4IO will flash to indicate
  that there is an error.
 
+Package: nureva-provision-macaddr-cm2
+Version: 1.0.0
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 17
+Depends: rpi-sb-provisioner, nureva-provision-style-naked
+Conflicts: nureva-provision-macaddr
+Provides: nureva-provision-macaddr
+Filename: ./nureva-provision-macaddr-cm2_1.0.0_all.deb
+Size: 3720
+MD5sum: 3eb39698d73f99ee3a4cf2a0ee40cb64
+SHA1: a72beb9e1ebd61de61abfcc578143b505e3332d8
+SHA256: 91658c4416aa03171913bfc26fa4fd688ed0619455549ac80122709eb3a3c581
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Program MAC addresses to CM2.
+ Manages provisioner script for programming MAC addresses to CM2 via a MAC
+ server.
+
 Package: nureva-provision-macaddr-hdx
 Version: 1.0.0
 Architecture: all
@@ -175,6 +275,26 @@ Size: 3770
 MD5sum: 2a63abee2ba1db4c750e1bc1cc9c952e
 SHA1: a8c75322b1d56dd4d81b2316edc92d6543dfd168
 SHA256: a15202ceba8f7d8c09b550bcf73ec60e057ee9926afe0d1165571e84764e3f44
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Program MAC addresses to HDX.
+ Manages provisioner script for programming MAC addresses to HDX via a MAC
+ server.
+
+Package: nureva-provision-macaddr-hdx
+Version: 1.0.2
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 21
+Depends: rpi-sb-provisioner, nureva-provision-style-naked
+Conflicts: nureva-provision-macaddr
+Provides: nureva-provision-macaddr
+Filename: ./nureva-provision-macaddr-hdx_1.0.2_all.deb
+Size: 4566
+MD5sum: d58a50d54d25cded381d2f6fb1756eac
+SHA1: b6802ecf5ee074cc2c816cd4ceccb79c8a1d8887
+SHA256: bf45cb71a6f00f30d8d79d27bceb51342ac4911ac5a0744d08c10fb135d0afc3
 Section: misc
 Priority: optional
 Multi-Arch: foreign
@@ -257,6 +377,25 @@ Multi-Arch: foreign
 Description: Configures provisioner for naked provisioning
  Sets up a folder for other packages to add scripts to and adds customisation
  scripts to `rpi-sb-provisioner`.
+
+Package: nureva-provision-system-cm2
+Version: 1.0.0
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 10
+Depends: rpi-sb-provisioner (>= 2.3.5), nureva-provision-device-cm4 (= 1.0.0), nureva-provision-devicecheck-cm2 (= 1.0.0), nureva-provision-led-cm4io (= 1.0.0), nureva-provision-macaddr-cm2 (= 1.0.0), nureva-provision-nginx (= 1.0.0), nureva-provision-printer (= 1.0.0), nureva-provision-style-naked (= 1.0.1), nureva-provision-usb-bottomusb2 (= 1.0.1)
+Recommends: nureva-provision-image-cm2
+Suggests: nureva-provision-label-printer-zd400 (= 1.0.0), nureva-provision-cm2-label-print (= 1.0.0)
+Filename: ./nureva-provision-system-cm2_1.0.0_all.deb
+Size: 2008
+MD5sum: 3161e618cc7c0c17598d3951bfffaf38
+SHA1: 3c5ec73a0dbecf3e1f67cd35c782d680b2be5489
+SHA256: 07b02503f3dd5ce0cc46e0455ee5876b09f402cb1ca1414e5c8dce369f7553d9
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Meta-package that brings in packages used for Secure Boot Provisioner for CM2.
+ Holds all of the necessary packages for the system that is used to program a CM2.
 
 Package: nureva-provision-system-hdx
 Version: 1.0.0
@@ -347,6 +486,25 @@ Size: 2174
 MD5sum: 996ee4cd52b373b674430c384fdb8fc2
 SHA1: 3267a0afd3d87e9ca98c8447aa13f47e157d6f23
 SHA256: cefa4234b3babe3f7119f0c78458b3bb02b326d54361e0ee90e1d869eb421468
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Meta-package that brings in packages used for Secure Boot Provisioner for HDX.
+ Holds all of the necessary packages for the system that is used to program a HDX.
+
+Package: nureva-provision-system-hdx
+Version: 1.0.5
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 10
+Depends: rpi-sb-provisioner (>= 2.3.5), nureva-provision-device-cm4 (= 1.0.0), nureva-provision-devicecheck-hdx (= 1.0.2), nureva-provision-led-cm4io (= 1.0.0), nureva-provision-macaddr-hdx (= 1.0.2), nureva-provision-nginx (= 1.0.0), nureva-provision-printer (= 1.0.0), nureva-provision-style-naked (= 1.0.1), nureva-provision-usb-bottomusb2 (= 1.0.1)
+Recommends: nureva-provision-image-hdx
+Suggests: nureva-provision-label-printer-zd400 (= 1.0.0), nureva-provision-hdx-label-print (= 1.0.3)
+Filename: ./nureva-provision-system-hdx_1.0.5_all.deb
+Size: 2226
+MD5sum: c48b3c484305b53ce82775f63bbb37b9
+SHA1: 3291e597e1faa3d821cb96cdd50102016d60a265
+SHA256: 36063957752cfd92e342a1deba7900206fc951e12b6bb73bea2c00117acf9126
 Section: misc
 Priority: optional
 Multi-Arch: foreign
