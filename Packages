@@ -304,6 +304,26 @@ Description: Program MAC addresses to CM2.
  Manages provisioner script for programming MAC addresses to CM2 via a MAC
  server.
 
+Package: nureva-provision-macaddr-cm2
+Version: 1.0.2
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 17
+Depends: rpi-sb-provisioner, nureva-provision-style-naked
+Conflicts: nureva-provision-macaddr
+Provides: nureva-provision-macaddr
+Filename: ./nureva-provision-macaddr-cm2_1.0.2_all.deb
+Size: 3890
+MD5sum: 5da6b7b4c0c8284a9176e3c2f5441526
+SHA1: 7f5a7669cef791edce94f66f380a82f8302e7b3b
+SHA256: 4b2d0e8d5d58887c7c4e21b4a439d2cc6114b518cbc5d1308ef633b7ee9429fb
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Program MAC addresses to CM2.
+ Manages provisioner script for programming MAC addresses to CM2 via a MAC
+ server.
+
 Package: nureva-provision-macaddr-hdx
 Version: 1.0.0
 Architecture: all
@@ -373,6 +393,26 @@ Size: 4616
 MD5sum: c2106fa1bb1ba361338dab0b1bc8e538
 SHA1: 059b3a2a6d4b6f0e4617c06841fa2b7fb139eae2
 SHA256: c602f7d432e75f7e1bd4f594ad74b84a2515b1a16f8caf81b59fbb49fb74c416
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Program MAC addresses to HDX.
+ Manages provisioner script for programming MAC addresses to HDX via a MAC
+ server.
+
+Package: nureva-provision-macaddr-hdx
+Version: 1.0.4
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 21
+Depends: rpi-sb-provisioner, nureva-provision-style-naked
+Conflicts: nureva-provision-macaddr
+Provides: nureva-provision-macaddr
+Filename: ./nureva-provision-macaddr-hdx_1.0.4_all.deb
+Size: 4702
+MD5sum: 20012fbde4ada05d1af40e770fa36daa
+SHA1: 871c3aacf7e8bc4f230b0cad6ac9b2ddd0f48adb
+SHA256: 358a096aa4a62f7ec3a8b6b8da7e294cb563ca46523707802aef233071adfe4b
 Section: misc
 Priority: optional
 Multi-Arch: foreign
@@ -507,6 +547,25 @@ Size: 2096
 MD5sum: dc6e12912513800d9cf7a607a46cad7c
 SHA1: 825c02d778fc02883ab6e97de9168ea969fd0529
 SHA256: bca15a59e8b30ce53f4679479705cf7cf5fee285eb9b7a926022c02f5c52e2f4
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Meta-package that brings in packages used for Secure Boot Provisioner for CM2.
+ Holds all of the necessary packages for the system that is used to program a CM2.
+
+Package: nureva-provision-system-cm2
+Version: 1.0.3
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 10
+Depends: rpi-sb-provisioner (>= 2.3.5), nureva-provision-device-cm4 (= 1.0.0), nureva-provision-devicecheck-cm2 (= 1.0.0), nureva-provision-led-cm4io (= 1.0.0), nureva-provision-macaddr-cm2 (= 1.0.2), nureva-provision-nginx (= 1.0.0), nureva-provision-printer (= 1.0.0), nureva-provision-style-naked (= 1.0.1), nureva-provision-usb-bottomusb2 (= 1.0.1)
+Recommends: nureva-provision-image-cm2
+Suggests: nureva-provision-label-printer-zd400 (= 1.0.0), nureva-provision-cm2-label-print (= 1.0.1)
+Filename: ./nureva-provision-system-cm2_1.0.3_all.deb
+Size: 2134
+MD5sum: 7aeba34ea80a1d5cb716a5113e851a05
+SHA1: 5019e27630facb772b5388d4b3765da6635c149a
+SHA256: c0f5fb8036465a342d14710a5088b4f519fee8798f353b7307e2e0a9012e1093
 Section: misc
 Priority: optional
 Multi-Arch: foreign
@@ -659,6 +718,25 @@ Size: 2282
 MD5sum: 6274423a2cf6eda330b876bddba1d24f
 SHA1: ef761f332dbef912968b15a1e20f72ee882483d5
 SHA256: b59e8cd31a4c2096ae9da71a85166fd7ee0a68a6ffa5d512c9bc7413d9d6062a
+Section: misc
+Priority: optional
+Multi-Arch: foreign
+Description: Meta-package that brings in packages used for Secure Boot Provisioner for HDX.
+ Holds all of the necessary packages for the system that is used to program a HDX.
+
+Package: nureva-provision-system-hdx
+Version: 1.0.8
+Architecture: all
+Maintainer: Kiley Hykawy <kileyhykawy@nureva.com>
+Installed-Size: 10
+Depends: rpi-sb-provisioner (>= 2.3.5), nureva-provision-device-cm4 (= 1.0.0), nureva-provision-devicecheck-hdx (= 1.0.2), nureva-provision-led-cm4io (= 1.0.0), nureva-provision-macaddr-hdx (= 1.0.4), nureva-provision-nginx (= 1.0.0), nureva-provision-printer (= 1.0.0), nureva-provision-style-naked (= 1.0.1), nureva-provision-usb-bottomusb2 (= 1.0.1)
+Recommends: nureva-provision-image-hdx
+Suggests: nureva-provision-label-printer-zd400 (= 1.0.0), nureva-provision-hdx-label-print (= 1.0.4)
+Filename: ./nureva-provision-system-hdx_1.0.8_all.deb
+Size: 2314
+MD5sum: a03535c31268af2e3d168a470191e41f
+SHA1: 064340b5890c7b9cb244ffe390bab9b4eb0097ac
+SHA256: 789f01e12f011a873d0032646f4d36b464ab28476b72e925776179d39833dd8a
 Section: misc
 Priority: optional
 Multi-Arch: foreign
